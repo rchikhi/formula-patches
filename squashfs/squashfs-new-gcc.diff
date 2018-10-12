@@ -1,0 +1,26 @@
+diff -crB a/squashfs-tools/mksquashfs.c b/squashfs-tools/mksquashfs.c
+*** a/squashfs-tools/mksquashfs.c 2018-10-13 00:14:15.744415753 +0200
+--- b/squashfs-tools/mksquashfs.c     2018-10-13 00:14:34.231082270 +0200
+***************
+*** 50,55 ****
+--- 50,56 ----
+  #include <sys/wait.h>
+  #include <limits.h>
+  #include <ctype.h>
++ #include <sys/sysmacros.h>
+
+  #ifndef linux
+  #define __BYTE_ORDER BYTE_ORDER
+diff -crB a/squashfs-tools/unsquashfs.c b/squashfs-tools/unsquashfs.c
+*** a/squashfs-tools/unsquashfs.c 2018-10-13 00:14:15.744415753 +0200
+--- b/squashfs-tools/unsquashfs.c     2018-10-13 00:15:08.734415355 +0200
+***************
+*** 35,40 ****
+--- 35,41 ----
+  #include <sys/types.h>
+  #include <sys/time.h>
+  #include <sys/resource.h>
++ #include <sys/sysmacros.h>
+  #include <limits.h>
+  #include <ctype.h>
+
